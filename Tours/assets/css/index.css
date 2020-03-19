@@ -1,0 +1,58 @@
+.main{
+	max-width: 1200px;
+	margin-left: 20%;
+	margin-up: 34%;
+}
+ul li.active a{
+	background: powderblue;
+	color: black;
+	box-shadow: 5px 5px 10px #999;
+	border: none;
+	transition: 0.3s ease;
+}
+UL{
+	float: right;
+	
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background: powderblue;
+	box-shadow: 5px 5px 10px #999;
+	border: none;
+	transition: 0.3s ease;
+	color: #fff;
+}
+ul li.active a{
+	background: powderblue;
+	color: #fff;
+	box-shadow: 5px 5px 10px #999;
+	border: none;
+	transition: 0.3s ease;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
