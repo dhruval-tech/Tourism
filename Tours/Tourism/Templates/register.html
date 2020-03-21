@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NEW USER </title>
+</head>
+<style>
+	body{
+		background-image :url('images/bg_1.jpg');
+}
+</style>
+<body text="black" >
+	<form  action="Homepage.html" method="POST"  >
+        {% csrf_token %}
+		<table bgcolor=skyblue align="center">
+
+			<tr>
+                <td><h1><center>Register</center></h1></td>
+            </tr>
+			<tr>
+			    <td>Firstname :</td>
+                <td> <input type="text" name="first_name" placeholder="First Name" required="required"></td>
+			</tr>
+			<tr>
+			    <td>Lastname :
+                </td> <td> <input type="text" name="last_name" placeholder="Last Name"  required="required"></td>
+			</tr>
+            <tr>
+			    <td>Username :
+                </td> <td> <input type="text" name="username" placeholder="User Name"  required="required"></td>
+			</tr>
+			<tr>
+                <td>Password :</td>
+                <td><input type="password" name="password1"  pattern=".{8,11}" placeholder="minimum length of 8"    id="pass" required="required"></td>
+			</tr>
+			<tr>
+			    <td>Confirm Password : </td>
+                <td><input type="password" name="password2" pattern=".{8,11}" placeholder="minimum length of 8"  required="required"></td>
+			</tr>
+			<tr>
+			    <td>Email id: </td>
+                <td><input type="text" name="email"  id="email" ></td>
+			</tr>
+            <tr>
+                <td><input type="submit"  ></td>
+			</tr>
+</table>
+</form>
+</body>
+</html>
+
