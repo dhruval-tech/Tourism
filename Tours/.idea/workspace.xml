@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73b2c2ec-7b3d-469b-b760-130a6c069707" name="Default Changelist" comment="" />
+    <list default="true" id="73b2c2ec-7b3d-469b-b760-130a6c069707" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tourism/Templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tourism/static/images/home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tourism/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tourism/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/Templates/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/Templates/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/Templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/static/css/about_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/css/about_us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/static/css/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/css/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourism/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tours/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tours/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/static/images/bg_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/about_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about_us.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,31 +42,38 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Z80HfywYeXiHh6Y84XroBTouMY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Tourism/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Tourism/static/styles/bootstrap4" />
     <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dhruval\Desktop\Tourism\Tours\Tourism\static\styles\bootstrap4" />
+      <recent name="C:\Users\Dhruval\Desktop\Tourism\Tours\Tourism\static\js" />
+      <recent name="C:\Users\Dhruval\Desktop\Tourism\Tours\Tourism\static\images" />
+      <recent name="C:\Users\Dhruval\Desktop\Tourism\Tours\Tourism\Templates" />
+      <recent name="C:\Users\Dhruval\Desktop\Tourism\Tours\accounts\static\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tourism" />
       <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tours" />
       <recent name="C:\Users\Dhruval\PycharmProjects\Tours\static" />
       <recent name="C:\Users\Dhruval\PycharmProjects\Tours" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tourism\static" />
-      <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tourism\static\images" />
-      <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tourism\static\js" />
-      <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tourism\static\css" />
-      <recent name="C:\Users\Dhruval\PycharmProjects\Tours\Tourism\static\plugins" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,6 +129,9 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="526" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584299336173">
       <screen x="0" y="0" width="1536" height="824" />
@@ -128,9 +165,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584392344623" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1584608986011">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1585230123705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584608986011" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585230123705" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585231430517">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585231430517" />
   </component>
 </project>

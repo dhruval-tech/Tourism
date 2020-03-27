@@ -8,13 +8,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 	<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+
 </head>
 
 <body>
@@ -34,8 +38,15 @@
 									<ul class="d-flex flex-row align-items-start justify-content-start">
 										<li class="active"><a href="Home.html">Home</a></li>
 										<li><a href="#">Places</a></li>
-										<li><a href="about_us">About us</a></li>
+										<li><a href="/about_us">About us</a></li>
 										<li><a href="contact_us.html">Contact</a></li>
+										{% if user.is_authenticated %}
+										<li><a href="#">Hello, {{user.first_name}}</a></li>
+										<li><a href="/logout">Logout</a></li>
+										{% else %}
+										<li><a href="/register">Register</a></li>
+										<li><a href="/login">Login</a></li>
+										{% endif %}
 									</ul>
 								</nav>
 								<div class="header_phone ml-auto">Call us: 9624527667 </div>
@@ -69,12 +80,13 @@
 			<div class="menu_content">
 				<ul>
 					<li><a href="Home.html">Home</a></li>
-					<li><a href="Places.html">Places</a></li>
-					<li><a href="about_us">About us</a></li>
+					<li><a href="/Places">Places</a></li>
+					<li><a href="/about_us">About us</a></li>
 					<li><a href="contact_us.html">Contact Us</a></li>
+					<li><a href="/register">Register</a></li>
+					<li><a href="/login">Login</a></li>
 				</ul>
 			</div>
-
 		</div>
 
 		<!-- Home -->
@@ -88,7 +100,7 @@
 					<!-- Slide -->
 					<div class="owl-item">
 						<div class="background_image"
-							style="background-image:url({% static 'images/home_slider.jpg' %})"></div>
+							style="background-image:url({% static 'images/home.jpg' %})"></div>
 						<div class="home_slider_content_container">
 							<div class="container">
 								<div class="row">
@@ -122,14 +134,55 @@
 					<div class="col">
 						<div class="destinations_container item_grid">
 
-							{% for dest in dests %}
-							<!-- Destination -->
+							 {% for dest in dests %}
+							  <!-- Destination -->
 								<div class="destination item">
 									<div class="destination_image">
 										<img src="{{dest.img.url}}" >
+
 										{% if dest.offer %}
-											<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+											<div class="spec_offer text-center">
+												{% if user.is_authenticated %}
+
+												     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Special offer Book</button>
+													 <div class="modal fade" id="myModal" role="dialog">
+														<div class="modal-dialog modal-lg">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal">&times;</button>
+																<h4 class="modal-title">Book Now</h4>
+															</div>
+															<div class="modal-body">
+																<form>
+																	<table>
+																		<tr>
+																			<td>Username</td>
+																			<td><input type="text" name="username"></td>
+																		</tr>
+																		<tr>
+																			<td>Total persons</td>
+																			<td><input type="number" name="number"></td>
+																		</tr>
+																		<tr>
+																			<td>Email</td>
+																			<td><input type="email"></td>
+																		</tr>
+																		<tr>
+																			<td><input type="submit" class="btn btn-default, modal-footer" data-dismiss="modal"></td>
+																		</tr>
+																	</table>
+																</form>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal"></button>
+															</div>
+														</div>
+													</div>
+											    {% else %}
+												    <a href="/login">special offer Book</a>
+											    {% endif %}
+									        </div>
 										{% endif %}
+
 									</div>
 									<div class="destination_content">
 										<div class="destination_title"><a href="destinations.html">{{dest.name}}</a>
@@ -137,8 +190,8 @@
 										<div class="destination_subtitle">
 											<p>{{dest.desc}}</p>
 										</div>
-										<div class="destination_price">From ${{dest.price}}</div>
-										<div></div>
+										<div class="destination_price">Package {{dest.price}}/-</div>
+
 									</div>
 								</div>
 
@@ -354,6 +407,7 @@
 							</div>
 
 							</footer>
+
 						</div>
 
 						<script src="{% static 'js/jquery-3.2.1.min.js' %}">
