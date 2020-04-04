@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73b2c2ec-7b3d-469b-b760-130a6c069707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tourism/Templates/logout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tourism/static/images/home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tourism/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tourism/static/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tourism/Templates/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tourism/Templates/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/about_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tourism/Templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tourism/static/css/about_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/css/about_us.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tourism/static/css/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/css/main_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/static/styles/bootstrap4/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tourism/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tourism/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tours/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tours/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/static/images/bg_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tourism/Templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/about_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/about_us.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,10 +144,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584392344623" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1585230123705">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1585986917910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585230123705" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585986917910" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585231430517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

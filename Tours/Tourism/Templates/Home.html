@@ -142,41 +142,58 @@
 
 										{% if dest.offer %}
 											<div class="spec_offer text-center">
-												{% if user.is_authenticated %}
+												 {% if user.is_authenticated %}
 
-												     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Special offer Book</button>
-													 <div class="modal fade" id="myModal" role="dialog">
-														<div class="modal-dialog modal-lg">
-															<div class="modal-header">
-																<button type="button" class="close" data-dismiss="modal">&times;</button>
-																<h4 class="modal-title">Book Now</h4>
-															</div>
-															<div class="modal-body">
-																<form>
-																	<table>
-																		<tr>
-																			<td>Username</td>
-																			<td><input type="text" name="username"></td>
-																		</tr>
-																		<tr>
-																			<td>Total persons</td>
-																			<td><input type="number" name="number"></td>
-																		</tr>
-																		<tr>
-																			<td>Email</td>
-																			<td><input type="email"></td>
-																		</tr>
-																		<tr>
-																			<td><input type="submit" class="btn btn-default, modal-footer" data-dismiss="modal"></td>
-																		</tr>
-																	</table>
-																</form>
-															</div>
-															<div class="modal-footer">
-																<button type="button" class="btn btn-default" data-dismiss="modal"></button>
-															</div>
-														</div>
-													</div>
+												  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalLoginForm">Book Now</button>
+												  <div id="ModalLoginForm" class="modal fade">
+													 <div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h1 class="modal-title">Book Now</h1>
+																</div>
+																<div class="modal-body">
+																	<form role="form" method="POST" action="">
+																		<input type="hidden" name="_token" value="">
+																		<div class="form-group">
+																			<label class="control-label">username</label>
+																		    <div>
+																				<input type="text" class="form-control input-lg" name="username" value="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label class="control-label">E-Mail Address</label>
+																		    <div>
+																				<input type="email" class="form-control input-lg" name="email" value="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label class="control-label">Total persons</label>
+																			<div>
+																				<input type="number" class="form-control input-lg" name="number">
+													            			</div>
+												            			</div>
+																		<div class="form-group">
+																			<label class="control-label">Price</label>
+																		    <div>
+																				<input type="number" class="form-control input-lg" name="number" value="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label class="control-label">Date</label>
+																		    <div>
+																				<input type="date" class="form-control input-lg" name="date" value="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																		    <div>
+																				<input type="submit" class="form-control input-lg" >
+																			</div>
+																		</div>
+																	</form>
+																</div>
+															</div><!-- /.modal-content -->
+													 </div><!-- /.modal-dialog -->
+												  </div><!-- /.modal -->
 											    {% else %}
 												    <a href="/login">special offer Book</a>
 											    {% endif %}
