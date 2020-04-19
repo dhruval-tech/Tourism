@@ -6,6 +6,7 @@ from django.views import generic
 from django.template.context_processors import csrf
 from .models import Places
 from django.contrib.auth.models import User, auth
+from django.core.mail import send_mail
 
 
 # Create your views here.
@@ -51,7 +52,8 @@ def register(request):
                 messages.info(request, 'email taken')
                 return redirect('register.html')
             else:
-                user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
+                user = User.objects.create_user(username=username, password=password1, email=email,
+                                                first_name=first_name, last_name=last_name)
                 user.save();
                 print('Register successfully')
                 return redirect('login')
@@ -66,3 +68,21 @@ def register(request):
 def logout(request):
     auth.logout(request)
     return redirect('/Home')
+
+
+def mail(request):
+    rec = request.POST['email']
+    send_mail('Book Successfully',
+              'You have successfully booked in tourism.....Thank You',
+              'tourism.phdc3@gmail.com',
+              [rec],
+              fail_silently=False)
+    return redirect('/Home')
+
+
+def places(request):
+    return render(request, 'Places.html')
+
+
+def contact(request):
+    return render(request, 'Contact_us.html')

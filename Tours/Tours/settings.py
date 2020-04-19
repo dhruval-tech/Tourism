@@ -25,6 +25,9 @@ SECRET_KEY = 'q^y@2uj-)5@(l+18fkp$djpujdl@wu8&4_4yd2sqr3770usif#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+
+
 ALLOWED_HOSTS = []
 
 
@@ -79,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Tourism',
         'USER': 'root',
-        'PASSWORD': 'dhruval',
+        'PASSWORD': '',
         "HOST": 'localhost'
 
     }
@@ -130,3 +133,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'tourism.phdc3@gmail.com'
+EMAIL_HOST_PASSWORD = 'Tourism@phd'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
