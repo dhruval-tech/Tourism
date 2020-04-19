@@ -86,3 +86,19 @@ def places(request):
 
 def contact(request):
     return render(request, 'Contact_us.html')
+
+
+def west(request):
+    return render(request, 'west.html')
+
+
+def east(request):
+    return render(request, 'east.html')
+
+
+def north(request):
+    return render(request, 'north.html')
+
+
+def south(request):
+    return render(request, 'south.html')
